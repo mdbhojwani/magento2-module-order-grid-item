@@ -1,11 +1,5 @@
 <strong>Mdbhojwani_OrderGridItem</strong> 
 
-## Table of contents
-
-- [Summary](#summary)
-- [Installation](#installation)
-- [License](#license)
-
 ## Summary
 
 Module use to display more detailed information to the admin order grid, which contains order line items, specific quantity and product names of items ordered.
