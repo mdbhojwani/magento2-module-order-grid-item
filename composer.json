@@ -1,0 +1,21 @@
+{
+    "name": "mdbhojwani/magento2-module-order-grid-item",
+    "description": "The Order Grid module adds more details to the order grid in the admin.",
+    "require": {
+        "php": ">=7.1",
+        "magento/framework": ">=101"
+    },
+    "type": "magento2-module",
+    "version": "1.0.8",
+    "license": [
+        "GNU"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mdbhojwani\\OrderGridItem\\": ""
+        }
+    }
+}
