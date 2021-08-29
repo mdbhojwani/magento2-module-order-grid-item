@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Mdbhojwani
+ * Copyright (C) 2021 Mdbhojwani
+ *
+ * @package Mdbhojwani_OrderGridItem
+ * @license http://opensource.org/licenses/gpl-3.0.html GNU General Public License,version 3 (GPL-3.0)
+ * @author Mdbhojwani
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="sales_order_grid_data_source" xsi:type="string">Mdbhojwani\OrderGridItem\Model\ResourceModel\Order\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Mdbhojwani\OrderGridItem\Model\ResourceModel\Order\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">sales_order_grid</argument>
+            <argument name="resourceModel" xsi:type="string">Magento\Sales\Model\ResourceModel\Order</argument>
+        </arguments>
+    </virtualType>
+</config>
